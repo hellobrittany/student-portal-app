@@ -1,1 +1,10 @@
 <h1>Capstone Information</h1>
+
+<!--go back to make sure calling from the right model -->
+
+<h2><%= capstone.name  %></h2>
+<h3> <%= capstone.url %></h3>
+
+<br>
+
+<% link_to "Edit Capstone", '/capstones/#{capstone.id}/edit', "btn btn-primary"  %>
