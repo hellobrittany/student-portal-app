@@ -1,0 +1,24 @@
+<h2>Education Show Page</h2>
+
+  <% @resume.each do |resume| %>
+ <div>
+    Start Date: <input type="text" name="start_date" value=" <%= @resume.start_date %>">
+  </div>
+   <div>
+    End Date: <input type="text" name="end_date" value=" <%= @resume.end_date %>">
+  </div>
+   <div>
+    Degree: <input type="text" name="degree" value=" <%= @resume.degree %>">
+  </div>
+   <div>
+    University: <input type="text" name="university" value=" <%= @resume.university %>">
+  </div>
+  <div>
+    Details: <input type="text" name="details" value=" <%= @resume.details %>">
+  </div>
+  <div>
+    Skills: <input type="skill_name" name="details" value=" <%= @resume.skill_name %>">
+  </div>
+    <% end %>
+    <input type="submit" name="Update Education">
+    <% end %>
