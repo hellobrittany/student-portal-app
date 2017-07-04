@@ -1,0 +1,9 @@
+<h1> <%= @current_user.first_name %>'s Experiences' </h1>  
+
+<% @experiences.each do |experience| %>
+    <h3> experience.start_date</h3>
+    <h3> experience.end_date</h3>
+    <h3> experience.job_title</h3>
+    <h3> experience.company_name</h3>
+    <h3> experience.details</h3>
+<% end %>
