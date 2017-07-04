@@ -1,0 +1,36 @@
+<h1>Your Resume</h1>
+<!-- go back and check names for correctness -->
+
+<h3><%= @resume.first_name %></h3>
+<h3><%= @resume.last_name %></h3>
+<h3><%= @resume.email %></h3>
+<h3><%= @resume.phone_number %></h3>
+<h3><%= @resume.short_bio %></h3>
+<h3><%= @resume.linkedin_url%></h3>
+<h3><%= @resume.twitter_url %></h3>
+<h3><%= @resume.personal_blog %></h3>
+<h3><%= @resume.online_resume_url %></h3>
+<h3><%= @resume.github_url%></h3>
+<h3><%= @resume.photo %></h3>
+
+<!-- check names -->
+
+<% @resume.each do |resume| %>
+	<h4><%= resume.start_date %></h4>
+	<h4><%= resume.end_date %></h4>
+	<h4><%= resume.job_title %></h4>
+	<h4><%= resume.company_name %></h4>
+	<h4><%= resume.details %></h4>
+<% end %>
+
+<% @resume.each do |resume| %>
+	<h4><%= resume.start_date %></h4>
+	<h4><%= resume.end_date %></h4>
+	<h4><%= resume.degree %></h4>
+	<h4><%= resume.univeristy %></h4>
+	<h4><%= resume.details %></h4>
+<% end %>
+
+<h4>@resume.skill_name</h4>
+
+

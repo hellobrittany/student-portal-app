@@ -1,0 +1,45 @@
+<h1> Edit Your Resume  </h1>
+
+<h2>Personal Details</h2>
+
+<%= form_tag "/resumes#{@resume.id}" method: :patch do %>
+
+  <div>
+    First Name: <input type="text" name="first_name" value=" <%= @resume.first_name %>">
+  </div>
+    <div>
+    Last Name: <input type="text" name="last_name" value=" <%= @resume.last_name %>">
+  </div>
+    <div>
+    email: <input type="text" name="email" value=" <%= @resume.email %>">
+  </div>
+    <div>
+    Phone: <input type="text" name="phone_number" value=" <%= @resume.phone_number %>">
+  </div>
+    <div>
+    short_bio: <input type="text" name="short_bio" value=" <%= @resume.short_bio %>">
+  </div>
+    <div>
+    Linkedin URL: <input type="text" name="linkedin_url" value=" <%= @resume.linkedin_url %>">
+  </div>
+    <div>
+    Twitter Handle: <input type="text" name="twitter_handle" value=" <%= @resume.twitter_url %>">
+  </div>
+    <div>
+    personal website: <input type="text" name="personal_website_url" value=" <%= @resume.personal_blog %>">
+  </div>
+    <div>
+    Online Resume URL: <input type="text" name="online_resume_url" value=" <%= @resume.online_resume_url %>">
+  </div>
+    <div>
+    Github URL: <input type="text" name="github_url" value=" <%= @resume.github_url%>">
+  </div>
+    <div>
+    Photo: <input type="text" name="photo" value=" <%= @resume.photo %>">
+  </div>
+  <input type="submit" name="Update Personal Details">
+<% end %>
+
+
+
+<a href=<%= "/resumes/#{resume.id}/edit" %>>Edit Resume</a>
