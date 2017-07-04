@@ -8,10 +8,10 @@ def create
   if user && user.authenticate(params[:password])
     session[:user_id] = user.id
     flash[:success] = 'Succesfully logged in!'
-    redirect_to "/users/#{user.id}"
+    redirect_to "/users/#{user.id}" #users show page
   else
     flash[:warning] = 'Invalid email or password'
-    redirect_to '/login'
+    redirect_to '/login' 
   end
 end
 
@@ -23,4 +23,3 @@ def destroy
 end
 
 
-end
